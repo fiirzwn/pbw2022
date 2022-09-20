@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multimedia - HTML 5</title>
+	</head>
+	<body>
+		<h2>Belajar Multimedia -HTML 5</h2>
+				<center>
+					<video id=myVideo>
+						<source src="multimedia/mov_bbb.mp4" type="video/mp4"></source>
+					</video>
+				</center>
+	</body>
+			<div style="text-align:center"> 
+			  <button onclick="playVid()">Play/Pause</button> 
+			  <button onclick="makeBig()">Big</button>
+			  <button onclick="makeSmall()">Small</button>
+			  <button onclick="makeNormal()">Normal</button>
+			  <br><br>
+			</div>
+		<script> 
+			var vid = document.getElementById("myVideo");
+			function enableControls(){
+				vid.controls = false;
+				vid.load();
+			}
+
+			function playVid() 
+			{ 
+					 vid.play();
+					 vd.loop = true; 
+			} 
+			
+			function playPause() 
+			{ 
+					 vid.pause();
+			} 
+
+			function makeBig() { 
+				myVideo.width = 560; 
+			} 
+
+			function makeSmall() { 
+				myVideo.width = 320; 
+			} 
+
+			function makeNormal() { 
+				myVideo.width = 420; 
+			} 
+		</script> 
+</html>
