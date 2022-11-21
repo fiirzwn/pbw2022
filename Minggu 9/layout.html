@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Layout Semantic Element">
+    <meta name="keywords" content="HTML, CSS, Semantic">
+    <meta name="author" content="Rapii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Element - HTML5</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <style>
+        *{
+            box-sizing : border-box;
+        }
+        header{
+            border: 3px solid goldenrod;
+            padding: 20px;
+            font-family: monospace;
+            font-size: 30px;
+            text-align: center;
+        }
+        .row:after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+            border: 1px solid goldenrod;
+        }
+        .col-1{ width:8.33%;}
+        .col-2{ width:16.66%;}
+        .col-3{ width:25%;}
+        .col-4{ width:33.33%;}
+        .col-5{ width:41.66%;}
+        .col-6{ width:50%;}
+        .col-7{ width:58.33%;}
+        .col-8{ width:66.66%;}
+        .col-9{ width:75%;}
+        .col-10{ width:83.33%;}
+        .col-11{ width:91.66%;}
+        .col-12{ width:100%;}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>BELAJAR MEMBUAT CSS</h2>
+    </header>
+    <main class="row">
+    <nav class="col-3">
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+            <li>Menu 5</li>
+            <li><a href=https://bit.ly/registmgfts3>Daftar</a></li>
+        </ul>
+    </nav>
+    <article class="col-9">
+        <p><span class="jud">About</span></p>
+        <p>Lorem ipsum do site color <span class="par">Lorem</span>
+        ipsum do site color Lorem ipsum do site color Lorem ipsum do site color.</p>
+    </article>
+    <div class="col-6">
+        blok 1
+    </div>
+    <div class="col-6">
+        blok2
+    </div>
+    <footer class="col-12" style="text-align: center">Copyright &copy; Rapii</footer>
+</body>
+</html>
